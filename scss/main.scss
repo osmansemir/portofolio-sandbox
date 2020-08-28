@@ -1,15 +1,22 @@
 //fonts
 @font-face{
     font-family: 'mosk 900';
-    src: url('../fonts/mosk/Mosk\ Ultra-Bold\ 900.ttf') format('truetype');
+    src: url('../fonts/mosk/Mosk\ Ultra-Bold\ 900.woff') format('woff'),
+     url('../fonts/mosk/Mosk\ Ultra-Bold\ 900.ttf') format('truetype');
 }
 @font-face{
     font-family: 'massa regular';
-    src: url('../fonts/massa/Massa\ Regular.ttf') format('truetype');
+    src: url('../fonts/massa/Massa.eot') format('embeded-opentype'),
+    url('../fonts/massa/Massa.woff2') format('woff2'),
+    url('../fonts/massa/Massa.woff') format('woff'),
+    url('../fonts/massa/Massa\ Regular.ttf') format('truetype');
 }
 @font-face{
     font-family: 'massa bold';
-    src: url('../fonts/massa/Massa\ Bold.ttf') format('truetype');
+    src: url('../fonts/massa/Swell-Black.eot') format('embeded-opentype'),
+    url('../fonts/massa/Swell-Black.woff2') format('woff2'),
+    url('../fonts/massa/Swell-Black.woff') format('woff'),
+    url('../fonts/massa/Massa\ Bold.ttf') format('truetype');
 }
 //variables
 
@@ -64,6 +71,10 @@ $button-color-three: $color-one-1;
 //General
 *{
     font-family:$normal-font;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -341,7 +352,7 @@ h3{
 }
 footer{
     background-color: $secondary-color;
-    p{
+    .find-me{
         color: $black-font-color;
     }
     a{
@@ -365,6 +376,15 @@ footer{
                 color: $white-font-color;
             }
         }  
+    }
+    .copyright{
+        padding: 7rem 0 10rem 0;
+        text-align: center;
+        font-size: 1.2rem;
+        span{
+           
+            font-size: .9rem;
+        }
     }
 }
 .title{
@@ -476,8 +496,8 @@ footer{
             left: 0;
         }
         h2{
-            background-color:$bg-main;
-            color: $black-font-color;
+            background-color:$button-color-one;
+            color: $white-font-color;
             padding: 3rem 1rem;
             border-radius: 1.2rem;
             font-size: 2.5rem;

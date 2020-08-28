@@ -31,26 +31,33 @@ window.addEventListener("DOMContentLoaded", function () {
     ajax(form.method, form.action, data, success, error);
   });
 
+  // nav handling
 
-  //jquery for nav handling
+  let navButton = document.querySelector('.hamburger'),
+    sideNav = document.querySelector('.nav');
 
-  let navButton = $('.hamburger'),
-    sideNav = $('.nav');
-  navButton.on('click', function () {
-    $(this).toggleClass('is-open');
-    sideNav.toggleClass('is-open');
+  navButton.addEventListener('click', function(e){
+    navButton.classList.toggle('is-open');
+    sideNav.classList.toggle('is-open');
   });
-  $('.side-nav a').on('click', function (e) {
-    e.preventDefault();
-    $(this).parent().parent().parent().parent().removeClass('is-open');
-    navButton.removeClass('is-open');
-    let destin = $(this)[0].hash;
-    $.scrollTo(destin, 1500);
+
+  let sideNavLinks = document.querySelectorAll('.side-nav a');
+  sideNavLinks.forEach(link => {
+    link.addEventListener('click', function(){
+      sideNav.classList.remove('is-open');
+    });
   });
-  $('.full-nav a').on('click', function (e) {
-    e.preventDefault();
-    let destin = $(this).attr('href');
-    $.scrollTo(destin, 1500);
+  
+  let fullNavLinks = document.querySelectorAll('.full-nav a');
+  fullNavLinks.forEach(element => {
+    element.addEventListener('click', function (e) {
+      e.preventDefault()
+      let destin = document.querySelector(e.target.hash);
+      destin.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
   });
 });
 

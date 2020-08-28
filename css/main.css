@@ -1,17 +1,20 @@
 @font-face {
   font-family: 'mosk 900';
-  src: url("../fonts/mosk/Mosk Ultra-Bold 900.ttf") format("truetype"); }
+  src: url("../fonts/mosk/Mosk Ultra-Bold 900.woff") format("woff"), url("../fonts/mosk/Mosk Ultra-Bold 900.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'massa regular';
-  src: url("../fonts/massa/Massa Regular.ttf") format("truetype"); }
+  src: url("../fonts/massa/Massa.eot") format("embeded-opentype"), url("../fonts/massa/Massa.woff2") format("woff2"), url("../fonts/massa/Massa.woff") format("woff"), url("../fonts/massa/Massa Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'massa bold';
-  src: url("../fonts/massa/Massa Bold.ttf") format("truetype"); }
+  src: url("../fonts/massa/Swell-Black.eot") format("embeded-opentype"), url("../fonts/massa/Swell-Black.woff2") format("woff2"), url("../fonts/massa/Swell-Black.woff") format("woff"), url("../fonts/massa/Massa Bold.ttf") format("truetype"); }
 
 * {
   font-family: "massa regular", "sans serif"; }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   background-color: #edf2f4;
@@ -231,7 +234,7 @@ h3 {
 
 footer {
   background-color: #8d99ae; }
-  footer p {
+  footer .find-me {
     color: #15163d; }
   footer a {
     color: unset; }
@@ -247,6 +250,12 @@ footer {
         color: #ef233c; }
       footer a:hover .fa-stack-1x {
         color: #fff; }
+  footer .copyright {
+    padding: 7rem 0 10rem 0;
+    text-align: center;
+    font-size: 1.2rem; }
+    footer .copyright span {
+      font-size: .9rem; }
 
 .title {
   background-color: #edf2f4;
@@ -331,8 +340,8 @@ footer {
       top: 0;
       left: 0; }
     .title h2 {
-      background-color: #edf2f4;
-      color: #15163d;
+      background-color: #ef233c;
+      color: #fff;
       padding: 3rem 1rem;
       border-radius: 1.2rem;
       font-size: 2.5rem; }
