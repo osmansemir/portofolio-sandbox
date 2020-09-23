@@ -220,15 +220,14 @@ section{
             width: 100%;
         }
         .quote{
-
             font-family: 'mosk 900';
-            font-size: 4.5rem;
+            font-size: 3.5rem;
             line-height: 1.1em;
             color: $black-font-color;
-            padding-top: 4rem;
+            padding-top: 5rem;
+            padding-left: 2rem;
             padding-bottom: 0;
             margin-bottom: 0;
-            // text-transform: uppercase;
         }
     }
     .clip-art{
@@ -283,7 +282,8 @@ section{
     min-height: 500px;
 }
 #skills{
-    text-align: center;
+    padding-top: 0;
+    padding-left: 3rem;
     .fa-stack-1x{
         color: $white-font-color;
         
@@ -303,7 +303,7 @@ h3{
     font-family: 'massa bold';
 }
 #contact{
-    text-align: center;
+    text-align: left;
     .contact-info{
         list-style: none;
         padding: 2rem;
@@ -349,10 +349,8 @@ h3{
             }
         }
     }
-}
-footer{
-    background-color: $secondary-color;
     .find-me{
+        text-align: center;
         color: $black-font-color;
     }
     a{
@@ -377,8 +375,12 @@ footer{
             }
         }  
     }
+}
+footer{
+    background-color: $secondary-color;
+    
     .copyright{
-        padding: 7rem 0 10rem 0;
+        padding: 3rem 0 2rem 0;
         text-align: center;
         font-size: 1.2rem;
         span{
@@ -389,16 +391,15 @@ footer{
 }
 .title{
     background-color: $bg-main;
-    padding: 3rem;
+    padding: 1rem 3rem 0rem 2rem;
     min-height: 100%;
     h2{
         font-family: $normal-font;
         font-size: 3rem;
         color: $black-font-color;
-        text-align: center;
+        text-align: left;
         margin: auto;
-        background-color: $secondary-color;
-        padding: 1rem 0 ;
+        padding: 1rem 0 0;
         border-radius: 1.2rem;
     }
 }
@@ -476,10 +477,10 @@ footer{
         }
     }
     .pb-last{
-        padding-bottom: 20rem;
+        padding-bottom: 10rem;
     }
     .pt-first{
-        padding-top: 7rem;
+        padding-top: 4rem;
     }
     .title{
         height: auto;
