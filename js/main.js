@@ -45,6 +45,7 @@ window.addEventListener("DOMContentLoaded", function () {
   sideNavLinks.forEach(link => {
     link.addEventListener('click', function(){
       sideNav.classList.remove('is-open');
+      navButton.classList.remove('is-open');
     });
   });
   

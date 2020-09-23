@@ -136,10 +136,11 @@ section {
     width: 100%; }
   #front div .quote {
     font-family: 'mosk 900';
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     line-height: 1.1em;
     color: #15163d;
-    padding-top: 4rem;
+    padding-top: 5rem;
+    padding-left: 2rem;
     padding-bottom: 0;
     margin-bottom: 0; }
   #front .clip-art {
@@ -183,7 +184,8 @@ section {
   min-height: 500px; }
 
 #skills {
-  text-align: center; }
+  padding-top: 0;
+  padding-left: 3rem; }
   #skills .fa-stack-1x {
     color: #fff; }
   #skills .fa-stack-2x {
@@ -197,7 +199,7 @@ h3 {
   font-family: 'massa bold'; }
 
 #contact {
-  text-align: center; }
+  text-align: left; }
   #contact .contact-info {
     list-style: none;
     padding: 2rem; }
@@ -231,27 +233,28 @@ h3 {
       color: green; }
     #contact form #my-form-status.failure {
       color: #d90429; }
+  #contact .find-me {
+    text-align: center;
+    color: #15163d; }
+  #contact a {
+    color: unset; }
+    #contact a .fa-stack-2x {
+      transition: color 300ms ease-in;
+      color: #2b2d42; }
+    #contact a .fa-stack-1x {
+      transition: color 300ms ease-in;
+      color: #fff; }
+    #contact a:hover {
+      text-decoration: none; }
+      #contact a:hover .fa-stack-2x {
+        color: #ef233c; }
+      #contact a:hover .fa-stack-1x {
+        color: #fff; }
 
 footer {
   background-color: #8d99ae; }
-  footer .find-me {
-    color: #15163d; }
-  footer a {
-    color: unset; }
-    footer a .fa-stack-2x {
-      transition: color 300ms ease-in;
-      color: #2b2d42; }
-    footer a .fa-stack-1x {
-      transition: color 300ms ease-in;
-      color: #fff; }
-    footer a:hover {
-      text-decoration: none; }
-      footer a:hover .fa-stack-2x {
-        color: #ef233c; }
-      footer a:hover .fa-stack-1x {
-        color: #fff; }
   footer .copyright {
-    padding: 7rem 0 10rem 0;
+    padding: 3rem 0 2rem 0;
     text-align: center;
     font-size: 1.2rem; }
     footer .copyright span {
@@ -259,16 +262,15 @@ footer {
 
 .title {
   background-color: #edf2f4;
-  padding: 3rem;
+  padding: 1rem 3rem 0rem 2rem;
   min-height: 100%; }
   .title h2 {
     font-family: "massa regular", "sans serif";
     font-size: 3rem;
     color: #15163d;
-    text-align: center;
+    text-align: left;
     margin: auto;
-    background-color: #8d99ae;
-    padding: 1rem 0;
+    padding: 1rem 0 0;
     border-radius: 1.2rem; }
 
 @media only screen and (min-width: 768px) {
@@ -323,9 +325,9 @@ footer {
       top: 0;
       left: 0; }
   .pb-last {
-    padding-bottom: 20rem; }
+    padding-bottom: 10rem; }
   .pt-first {
-    padding-top: 7rem; }
+    padding-top: 4rem; }
   .title {
     height: auto;
     background-color: #edf2f4;
